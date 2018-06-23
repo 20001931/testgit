@@ -7,11 +7,21 @@ promotion
 promotion
 public class promotion {
 public static void main(String[] args) {
+def getSkuInfo(spark, dt):
+    return spark.read.format("CSV").option("header", "true").option("delimiter", "\t") \
+        .load("file:////home/fred/data/test/skuInfo3.csv")
 
+def getPromotionData(spark, dt):
+    return spark.read.format("CSV").option("header", "true") \
+        .load("file:///home/fred/data/test/promotion1381_all_new.csv")
+根据促销定义一个特殊方法
+public static void promotion_coudan() {
+    System.out.println(sum(a, b));
+}
 //定义两个变量
-int a = 10 ;
-int b = 20 ;
-int d = 50 ;
+int a = 78 ;
+int b = 56 ;
+int d = 89 ;
 //调用求和功能去实现
 //1)单独调用
 // sum(a,b) ;
