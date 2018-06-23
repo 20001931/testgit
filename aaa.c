@@ -3,7 +3,7 @@ funtionaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 master
 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
-
+我需要解决sharebuy紧急的bug
 public class sharebuy {
 public static void main(String[] args) {
 
